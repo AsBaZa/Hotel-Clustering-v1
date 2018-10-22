@@ -1,0 +1,97 @@
+@media screen and (max-width: 1030px) {
+  section{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categorydiv{
+    width: 315px;
+  }
+
+  #heatmap{
+    margin: 10px;
+  }
+
+  .nothing{
+    width: calc((100% - 690px)/2);
+  }
+
+  .stratumplot{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media screen and (max-width: 707px) {
+  aside{
+    display: block;
+  }
+
+  .categorydiv, #heatmap{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .clustering_type_select{
+    display: flex;
+    width: 50%;
+    margin-left: 0px;
+  }
+
+  #clustering_type_selector{
+    width: 170px;
+  }
+
+  .radio_button{
+    display: none;
+    width: 0px;
+  }
+
+  .radio_text{
+    width: 50%;
+    padding-right: 65px;
+    text-align: right;
+    padding-top: 3px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  nav{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav_select{
+    width: 46%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .radiodiv{
+    flex-wrap: wrap;
+  }
+
+  .radio_text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .clustering_type_select{
+    width: 100%;
+  }
+
+  #clustering_type_selector{
+    margin: auto;
+  }
+}
