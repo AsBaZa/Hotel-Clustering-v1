@@ -1,4 +1,4 @@
-# Eustat - Clustering
+# Hotel - Clustering
 
 This project is done by <a href="http://en.eustat.eus/indice.html">Eustat</a> with the objective of making different clusterings with the price of the hotels and pensions of the Basque Country. The prices of the establishments have been taken from <a href="https://www.booking.com">Booking</a> using different web-scraping methods.
 
