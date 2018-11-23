@@ -37,25 +37,9 @@ header, div {
    height: 60px;
  }
 
- .header_left{
-   width: 50px;
-   margin: 5px 0px 5px 5px;
- }
-
- .logo{
-   height: 100%;
-   width: 100%;
- }
-
  .header_central{
-   width: 100%;
-   text-align: center;
-   margin:auto;
- }
-
- .header_right{
-   width: 66px;
-   margin: 5px 5px 5px 0px;
+   margin-left: auto;
+   margin-right: auto;
  }
 
 /*
@@ -265,19 +249,4 @@ footer{
   background-color: #013161;
   height: 80px;
   display: flex;
-}
-
-.google-apple-store{
-  margin: auto;
-  display: flex;
-}
-
-.store-logo{
-  width: 150px;
-  margin: auto;
-  padding: 10px;
-}
-
-.google-apple-image{
-  width: 100%;
 }

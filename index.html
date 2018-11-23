@@ -12,44 +12,29 @@
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
   crossorigin=""></script>
-      <!-- Leaflet.Shapefile -->
-      <script src="https://rawgit.com/calvinmetcalf/leaflet.shapefile/gh-pages/catiline.js"></script>
-      <script src="https://rawgit.com/calvinmetcalf/leaflet.shapefile/gh-pages/leaflet.shpfile.js"></script>
 
     <!-- Plotly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-basic-latest.min.js"></script>
 
     <!-- Local Files -->
-    <script src="js/dfABS.js"></script>
-    <script src="js/dfNOR.js"></script>
-    <script src="js/dfALD.js"></script>
-    <script src="js/honESTCLUS.js"></script>
+    <script src="shapefile/basque_est.js"></script>
+    <script src="js/data/dfABS.js"></script>
+    <script src="js/data/dfNOR.js"></script>
+    <script src="js/data/dfALD.js"></script>
+    <script src="js/data/honESTCLUS.js"></script>
 
     <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <!-- Title and Logo -->
-    <link rel="shortcut icon" type="images/x-icon" href="images/eustat3.png" />
-    <title>Eustat - Clustering</title>
+    <title>Hotel - Clustering</title>
   </head>
 
   <body>
     <header>
-      <div class="header_left">
-        <a href="http://en.eustat.eus/indice.html">
-          <img class="logo" src="images/eustat3.png" alt="eustat logo"
-          title="Eustat">
-        </a>
-      </div>
       <div class="header_central">
-        <h1>Clustering</h1>
-      </div>
-      <div class="header_right">
-        <a href="http://www.euskadi.eus/hasiera/">
-          <img class="logo" src="images/ejgv.png" alt="eustat logo"
-          title="Eusko Jaurlaritza">
-        </a>
+        <h1>Hotel Clustering</h1>
       </div>
     </header>
 
@@ -65,7 +50,6 @@
           <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
-          <option value="7">7</option>
         </select>
       </div>
       <div class="nav_select">
@@ -171,20 +155,6 @@
     </main>
 
     <footer>
-      <div class="google-apple-store">
-        <div class="store-logo">
-          <a href="https://play.google.com/store/apps/details?id=es.eustat.Eustat">
-            <img class="google-apple-image" src="images/google-play-badge.png" alt="google-play logo"
-            title="Eustat Google Play">
-          </a>
-        </div>
-        <div class="store-logo">
-          <a href="https://itunes.apple.com/es/app/eustatapp/id794387121?mt=8&ign-mpt=uo%3D4">
-            <img class="google-apple-image" src="images/apple-app-store-badge.png" alt="google-play logo"
-            title="Eustat Apple Store">
-          </a>
-        </div>
-      </div>
     </footer>
 
     <!-- Local Scripts -->
@@ -192,5 +162,5 @@
     <script src="js/main.js"></script>
 
   </body>
-  
+
 </html>

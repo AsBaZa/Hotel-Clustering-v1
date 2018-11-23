@@ -49,7 +49,7 @@ document.getElementById("input_stratum").value = "denak";
 
       //If Absolute Price is selected, add 3 options
       if (x.value === "CLUSTERABS"){
-        ["5","6","7"].map(function(y){
+        ["5","6"].map(function(y){
           option = document.createElement("option");
           option.text = y;
           option.value = y;
@@ -58,7 +58,7 @@ document.getElementById("input_stratum").value = "denak";
       }
       //Else, delete 3 options
       else{
-        [7,6,5].map(function(y){
+        [6,5].map(function(y){
           document.getElementById("input_cluster").remove(y);
         });
       }

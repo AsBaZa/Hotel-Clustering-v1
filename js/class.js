@@ -136,7 +136,7 @@ class ClusterPlot extends PlotPlotly{
           {
             x: this.dataRaw.FECHA,
             y: this.dataRaw[i],
-            name: "Medoid " + i,
+            name: "Group " + i,
             line: {
               color: this.colors[i - 1]
             }
@@ -150,7 +150,7 @@ class ClusterPlot extends PlotPlotly{
         {
           x: this.dataRaw.FECHA,
           y: this.dataRaw[this.select1.selectedIndex],
-          name: "Medoid " + this.select1.selectedIndex,
+          name: "Group " + this.select1.selectedIndex,
           fill: 'tozeroy',
           line: {
             color: this.colors[this.select1.selectedIndex - 1]
@@ -359,7 +359,7 @@ class HeatMap extends Plot{
     //Set the leaflet map in <div id='heatmap'>
     //setView: lat-lon --->  43 North 2.59 West
     //setView: zoom ---> 8
-    this.map = L.map('heatmap',{zoomControl:false}).setView([43, -2.59], 8);
+    this.map = L.map('heatmap',{zoomControl:false}).setView([42.98, -2.59], 8);
 
     //Block map, we don't want to move it
     this.map.dragging.disable();
@@ -393,7 +393,7 @@ class HeatMap extends Plot{
     };
 
     //Load Shapefile of the Basque Country by stratum
-    this.shpfile = new L.Shapefile('shapefile/basque_est.zip', {
+    this.shpfile = new L.geoJSON(geoEAE, {
       onEachFeature: function(feature, layer) {
         if (feature.properties) {
           //Specify what text is shown when a stratum is clicked
@@ -412,10 +412,12 @@ class HeatMap extends Plot{
     this.shpfile.addTo(this.map);
 
     //Once Shapefile is loaded, paint it
-    this.shpfile.once("data:loaded", function() {
-      this.paintStratum();
-      this.addLegend();
-    }, this);
+    this.shpfile.once("data:loaded", this.firstPaint());
+  }
+
+  firstPaint(){
+    this.paintStratum();
+    this.addLegend();
   }
 
   //Set color per each interval, from yellow to red
